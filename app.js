@@ -21,6 +21,13 @@ res.json({"status":"success","data":data})
 })
 
 
+//search recipe details
+app.post("/search",(req,res)=>{
+    var data=req.body
+res.json({"status":"success","data":data})
+})
+
+
 app.listen(4000,()=>{
     console.log("server starts running....")}
 )
