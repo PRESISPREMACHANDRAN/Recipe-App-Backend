@@ -10,9 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
-mongoose.connect(
-  "mongodb+srv://presi123:presi123@cluster0.dfo33ti.mongodb.net/RecipeDB?retryWrites=true&w=majority"
-);
+mongoose.connect("mongodb+srv://presi123:presi123@cluster0.dfo33ti.mongodb.net/RecipeDB?retryWrites=true&w=majority");
 
 // add recipe details
 app.post("/add",async(req,res)=>{
